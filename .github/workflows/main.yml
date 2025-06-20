@@ -1,0 +1,30 @@
+name: Sample DORA Deploy Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Echo Hello
+        run: echo "Hello from build!"
+
+  deploy:
+    name: deploy-to-prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Deploy
+        run: echo "Simulating deployment..."
+
+  push-image:
+    name: push-image-to-registry
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Push Image
+        run: echo "Simulating image push..."
