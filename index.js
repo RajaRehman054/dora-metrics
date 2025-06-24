@@ -1,1 +1,1 @@
-console.log('Dora Metrics Exporter for OpenTelemetry');
+console.log('Dora Metrics Exporter for OpenTelemetry')
