@@ -1,4 +1,4 @@
-name: Sample DORA Deploy Workflow
+name: Deploy to Production
 
 on:
   push:
